@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 flake8 = "*"
+pandas = "*"
+requests = "*"
+urllib3 = "==1.26.6"
 
 [dev-packages]
 

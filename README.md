@@ -7,7 +7,6 @@ This repository contains code for fetching exchange rate data from the European 
 - Python 3.7+
 - pandas library
 - requests library
-- xml.etree.ElementTree module
 
 ## Installation
 

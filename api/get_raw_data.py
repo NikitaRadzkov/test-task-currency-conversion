@@ -1,6 +1,7 @@
 import pandas as pd
 import requests
 import xml.etree.ElementTree as ElementTree
+from constants import TIME_PERIOD_COLUMN_NAME, OBS_VALUE_COLUMN_NAME
 
 
 def get_raw_data(identifier: str) -> pd.DataFrame:
@@ -19,7 +20,7 @@ def get_raw_data(identifier: str) -> pd.DataFrame:
             "generic": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic"}).attrib["value"]
         obs_value = float(obs.find("./generic:ObsValue", namespaces={
             "generic": "http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic"}).attrib["value"])
-        data.append({"TIME_PERIOD": time_period, "OBS_VALUE": obs_value})
+        data.append({TIME_PERIOD_COLUMN_NAME: time_period, OBS_VALUE_COLUMN_NAME: obs_value})
 
     df = pd.DataFrame(data)
     return df

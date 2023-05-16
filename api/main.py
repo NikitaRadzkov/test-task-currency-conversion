@@ -1,4 +1,4 @@
-from services import get_data, get_exchange_rate
+from api.services import get_data, get_exchange_rate
 
 
 get_exchange_rate("GBP")

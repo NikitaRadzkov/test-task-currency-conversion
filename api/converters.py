@@ -4,7 +4,7 @@ from xml.etree import ElementTree as ET
 
 import pandas as pd
 
-from constants import TIME_PERIOD_COLUMN_NAME, OBS_VALUE_COLUMN_NAME
+from api.constants import TIME_PERIOD_COLUMN_NAME, OBS_VALUE_COLUMN_NAME
 
 
 class EuropeanCentralBankXMLDataToDataFrameConverter:

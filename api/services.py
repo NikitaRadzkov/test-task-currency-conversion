@@ -3,9 +3,9 @@ from typing import Optional
 
 import pandas as pd
 
-from api_clients import EuropeanCentralBankClient
-from constants import TIME_PERIOD_COLUMN_NAME, OBS_VALUE_COLUMN_NAME
-from converters import EuropeanCentralBankXMLDataToDataFrameConverter
+from api.api_clients import EuropeanCentralBankClient
+from api.constants import TIME_PERIOD_COLUMN_NAME, OBS_VALUE_COLUMN_NAME
+from api.converters import EuropeanCentralBankXMLDataToDataFrameConverter
 
 
 async def _get_exchange_rate(source: str, target: str = "EUR") -> pd.DataFrame:

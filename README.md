@@ -12,10 +12,12 @@ This repository contains code for fetching exchange rate data from the European 
 ## Installation
 
 1. Navigate to the project directory:
+
    ```bash
    cd test-task-currency-conversion
 
 2. Install the required dependencies:
+
    ```bash
    pipenv sync
    ```

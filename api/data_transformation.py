@@ -1,7 +1,7 @@
 import pandas as pd
 from typing import Optional
-from currency_conversion.get_raw_data import get_raw_data
-from currency_conversion.get_exchange_rate import get_exchange_rate
+from api.get_raw_data import get_raw_data
+from api.get_exchange_rate import get_exchange_rate
 
 
 def get_data(identifier: str, target_currency: Optional[str] = None) -> pd.DataFrame:

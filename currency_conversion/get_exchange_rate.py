@@ -26,6 +26,6 @@ def get_exchange_rate(source: str, target: str = "EUR") -> pd.DataFrame:
     return df
 
 
-data = get_exchange_rate("GBP")
+exchange_rate = get_exchange_rate("GBP")
 
-print(data)
+print(exchange_rate)

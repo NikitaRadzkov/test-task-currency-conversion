@@ -5,7 +5,6 @@ name = "pypi"
 
 [packages]
 pandas = "*"
-requests = "*"
 urllib3 = "==1.26.6"
 aiohttp = "*"
 
